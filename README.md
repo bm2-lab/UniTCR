@@ -24,7 +24,7 @@ UniTCR is a unified framework composed of a dual-modality contrastive learning m
     python ./Scripts/Pretrain/Embedding_extraction.py --config ./Configs/TrainingConfig_pretrain.yaml
 
 ### 2. Epitope-TCR binding prediction
-#### No HLA information
+#### 2.1 No HLA information
 #### Training:
 
     python ./Scripts/EpitopeBindingPrediction/UniTCR_Training_BindPre.py --config ./Configs/TrainingConfig_EpitopeBindPrediction.yaml
@@ -32,7 +32,7 @@ UniTCR is a unified framework composed of a dual-modality contrastive learning m
 
     python ./Scripts/EpitopeBindingPrediction/UniTCR_Testing_BindPre.py --config ./Configs/TrainingConfig_EpitopeBindPrediction.yaml --input ./Data/Examples/Example_testing.csv
 
-#### incorporating HLA information
+#### 2.2 Incorporating HLA information
 #### Training:
 
     python ./Scripts/EpitopeBindingPrediction/UniTCR_Training_BindPre_HLA.py  --config ./Configs/TrainingConfig_EpitopeBindPrediction_HLA.yaml
