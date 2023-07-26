@@ -14,7 +14,7 @@ UniTCR is a unified framework composed of a dual-modality contrastive learning m
 * scipy == 1.7.3  
 #### * Note : you should install CUDA and cuDNN version compatible with the pytorch version [Version Searching](https://pytorch.org/). 
 ## Usage  
-### Single modality analysis / Modality gap analysis
+### 1. Single modality analysis / Modality gap analysis
 #### Pretrain
 
     python ./Scripts/Pretrain/UniTCR_pretrain.py --config ./Configs/TrainingConfig_pretrain.yaml
@@ -23,7 +23,7 @@ UniTCR is a unified framework composed of a dual-modality contrastive learning m
 
     python ./Scripts/Pretrain/Embedding_extraction.py --config ./Configs/TrainingConfig_pretrain.yaml
 
-### Epitope-TCR binding prediction
+### 2. Epitope-TCR binding prediction
 #### No HLA information
 #### Training:
 
@@ -39,7 +39,7 @@ UniTCR is a unified framework composed of a dual-modality contrastive learning m
 #### Testing:
 
     python ./Scripts/EpitopeBindingPrediction/UniTCR_Testing_BindPre_HLA.py --config ./Configs/TrainingConfig_EpitopeBindPrediction.yaml --input ./Data/Examples/Example_testing_HLA.csv
-### Cross-modaltiy generation
+### 3. Cross-modaltiy generation
 ## Citation
 
 ## Contacts
