@@ -11,7 +11,9 @@ UniTCR is a unified framework composed of a dual-modality contrastive learning m
 * pytorch == 1.10.2  
 * numpy == 1.21.2  
 * pandas == 1.4.1  
-* scipy == 1.7.3  
+* scipy == 1.7.3
+* scanpy == 1.9.1
+* anndata == 0.8.0
 #### * Note : you should install CUDA and cuDNN version compatible with the pytorch version [Version Searching](https://pytorch.org/). 
 ## Usage  
 ### 1. Single modality analysis / Modality gap analysis
