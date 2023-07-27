@@ -40,6 +40,13 @@ UniTCR is a unified framework composed of a dual-modality contrastive learning m
 
     python ./Scripts/EpitopeBindingPrediction/UniTCR_Testing_BindPre_HLA.py --config ./Configs/TrainingConfig_EpitopeBindPrediction.yaml --input ./Data/Examples/Example_testing_HLA.csv
 ### 3. Cross-modaltiy generation
+#### Training:
+
+    python ./Scripts/CrossModalityGeneration/UniTCR_training_CrossModalityGeneration.py --config ./Configs/TrainingConfig_CrossModalityGeneration.yaml
+#### Testing:
+
+    python ./Scripts/CrossModalityGeneration/UniTCR_testing_CrossModalityGeneration.py --config ./Configs/TrainingConfig_CrossModalityGeneration.yaml --input ./Data/Examples/Example_CMG_test_data.h5ad
+
 ## Citation
 
 ## Contacts
