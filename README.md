@@ -6,6 +6,26 @@ UniTCR is a unified framework for integration and joint analysis of T cell recep
 * Epitope-TCR binding prediction
 * Cross-modality generation
 
+## Table of contents
+- [Requirements]()
+- [Installation]()
+- [Usage]()
+  - [Single modality analysis / Modality gap analysis]()
+    - [Pretrain]()
+    - [Single modality embedding extraction / modality gap calculation]()
+  - [Epitope-TCR binding prediction]()
+    - [No HLA information]()
+      - [Training]()
+      - [Testing]()
+    - [Incorporating HLA information]()
+      - [Training]()
+      - [Testing]()
+  - [Cross-modaltiy generation]()
+    - [Training]()
+    - [Testing]()
+- [Citation]()
+- [Contacts]()
+  
 ## Requirements  
 * python == 3.9.7  
 * pytorch == 1.10.2  
