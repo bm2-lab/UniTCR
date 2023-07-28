@@ -15,6 +15,11 @@ UniTCR is a unified framework for integration and joint analysis of T cell recep
 * scanpy == 1.9.1
 * anndata == 0.8.0
 #### * Note : you should install CUDA and cuDNN version compatible with the pytorch version [Version Searching](https://pytorch.org/). 
+
+## Installation
+
+    git clone https://github.com/bm2-lab/UniTCR.git
+
 ## Usage  
 ### 1. Single modality analysis / Modality gap analysis
 #### Pretrain
