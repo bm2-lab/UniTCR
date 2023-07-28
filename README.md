@@ -21,12 +21,17 @@ UniTCR is a unified framework for integration and joint analysis of T cell recep
 Command:
 
     python ./Scripts/Pretrain/UniTCR_pretrain.py --config ./Configs/TrainingConfig_pretrain.yaml
-    
+* config.yaml: input *.yaml file contains all necessary parameters that used for UniTCR, containing model parameters, modol trained for inference, and the output directory, etc. Detailed information can be found in the directory "./Configs".
+
+This command line will output a directory "Model_checkpoints" and a "training.log" in the directory "./Experiments/TrainingResult_Pretrain". These files are the records for the model training.
 #### Single modality embedding extraction / modality gap calculation
 Command：
 
     python ./Scripts/Pretrain/Embedding_extraction.py --config ./Configs/TrainingConfig_pretrain.yaml
 
+* config.yaml: input *.yaml file contains all necessary parameters that used for UniTCR, containing model parameters, modol trained for inference, and the output directory, etc. Detailed information can be found in the directory "./Configs".
+
+This command line will output a directory "Embedding_Result" in the directory "./Experiments/TrainingResult_Pretrain", which contains a profile embedding (* .h5ad), a TCR embedding (* .h5ad) and a gap information for each T cell (* .h5ad)
 ### 2. Epitope-TCR binding prediction
 #### 2.1 No HLA information
 #### Training:
