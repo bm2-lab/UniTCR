@@ -33,7 +33,8 @@ Command：
 
 This command line will output a directory "Embedding_Result" in the directory "./Experiments/TrainingResult_Pretrain", which contains a profile embedding (* .h5ad), a TCR embedding (* .h5ad) and a gap information for each T cell (* .h5ad)
 ### 2. Epitope-TCR binding prediction
-#### 2.1 No HLA information
+#### 2.1 No HLA information 
+This is the setting that the TCR encoder of UniTCR is used for constructing the epitope-TCR binding prediction model without using HLA information.
 #### Training:
 Command
 
@@ -54,6 +55,7 @@ In the Label column, there are two values: 1 indicating binding, 0 indicating no
 This command line will output a "Prediction_result.csv" in the directory "./Experiments/TrainingResult_BindPre". This file contains four columns:  Beta, Peptide, Label, and Rank, which represents TCR CDR3 sequence, the epitope sequence, the ground-truth binding specificity, and their predicted binding score, respectively. 
 
 #### 2.2 Incorporating HLA information
+This is the setting that the TCR encoder of UniTCR is used for constructing the epitope-TCR binding prediction model using HLA information.
 #### Training:
 Command：
 
