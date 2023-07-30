@@ -1,0 +1,31 @@
+dataset:
+  Training_dataset: ./Data/Examples/Example_training_HLA.csv
+  Validation_dataset: ./Data/Examples/Example_validation_HLA.csv
+Train:
+  Sampling:
+    batch_size: 256
+    sample_shuffle: True
+  
+  Model_Parameter:
+    encoderTCR_in_dim: 5
+    encoderTCR_out_dim: 256
+    encoderpMHC_in_dim: 5
+    encoderpMHC_out_dim: 256
+    out_dim: 256
+    head_num: 4
+    device: cuda
+    Pretrained: True
+    
+  Trainer_parameter:
+    random_seed: 888
+    epoch: 250
+    learning_rate: 0.00001
+  
+  output_dir: ./Experiments/TrainingResult_BindPre_HLA
+
+
+Inference:
+  Sampling:
+    batch_size: 256
+    sample_shuffle: False
+  Model: ./Experiments/TrainingResult_BindPre_HLA/Model_checkpoints/epoch250_model.pth

@@ -1,0 +1,38 @@
+dataset:
+  Training_dataset: ./Data/Examples/Example_CMG_train_orignial_profile.h5ad
+  Training_compressed_profile: ./Data/Examples/Example_CMG_train_compressed_profile.h5ad
+  Training_compressed_TCR: ./Data/Examples/Example_CMG_train_compressed_TCR.h5ad
+  Validation_dataset: ./Data/Examples/Example_CMG_validation_orignial_profile.h5ad
+  Validation_compressed_profile: ./Data/Examples/Example_CMG_validation_compressed_profile.h5ad
+  Validation_compressed_TCR: ./Data/Examples/Example_CMG_train_compressed_TCR.h5ad
+
+
+
+Train:
+  Sampling:
+    batch_size: 64
+    sample_shuffle: True
+  
+  Model_Parameter:
+    encoderTCR_in_dim: 5
+    encoderTCR_out_dim: 256
+    encoderprofile_in_dim: 256
+    encoderprofile_hid_dim: 512
+    encoderprofile_hid_dim2: 1024
+    encoderprofle_out_dim: 5000
+    out_dim: 256
+    head_num: 4
+    device: cuda
+
+  Trainer_parameter:
+    random_seed: 888
+    epoch: 200
+    learning_rate: 0.000001
+  
+  output_dir: ./Experiments/TrainingResult_CrossModalityGeneration
+
+Inference:
+  Sampling:
+    batch_size: 256
+    sample_shuffle: False
+  Model: ./Experiments/TrainingResult_CrossModalityGeneration/Model_checkpoints/epoch200_model.pth
