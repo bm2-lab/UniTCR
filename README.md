@@ -4,7 +4,10 @@ UniTCR is a unified framework for integration and joint analysis of T cell recep
 * Single modality analysis
 * Modality gap analysis
 * Epitope-TCR binding prediction
-* Cross-modality generation
+* Cross-modality generation  
+<p align="center">
+<img src="https://github.com/bm2-lab/UniTCR/assets/89248357/943b3549-59a5-4367-b599-d5abaf0df3b0" width = 80%></img>
+</p>
 
 ## Table of contents
 - [Requirements](https://github.com/bm2-lab/UniTCR/tree/main#requirements)
