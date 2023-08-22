@@ -1,6 +1,6 @@
 """
 testing command line:
-python ./Scripts/CrossModalityGeneration/UniTCR_testing_CrossModalityGeneration.py --config ./Configs/TrainingConfig_CrossModalityGeneration.yaml --input ./Data/Examples/Example_CMG_test_data.h5ad
+python ./Scripts/CrossModalityGeneration/UniTCR_testing_CrossModalityGeneration.py --config ./Configs/TrainingConfig_CrossModalityGeneration.yaml --input ./Data/Examples/Example_CMG_test_TCRs.csv
 """
 import scanpy as sc
 import os
@@ -74,8 +74,8 @@ UniTCR_example = UniTCR_model(encoderTCR_in_dim = config['Train']['Model_Paramet
 checkpoint = torch.load("./Requirements/Pretrained_model.pth")
 UniTCR_example.load_state_dict(checkpoint['model_state_dict'])
 
-testing_data = sc.read_h5ad(args.input)
-TCRs = np.array(testing_data.obs['beta'])
+testing_data = pd.read_csv(args.input)
+TCRs = np.array(testing_data['TCR'])
 TCR_encodings = [TCR_encoding(i) for i in TCRs]
 TCR_encodings = torch.stack(TCR_encodings, axis = 0)
 
@@ -95,7 +95,6 @@ with torch.no_grad():
 Profile_pre = torch.cat(Profile_pre, axis = 0)
 
 generation_profile = ad.AnnData(Profile_pre.numpy())
-generation_profile.obs = testing_data.obs
-testing_data = sc.read_h5ad(args.input)
-generation_profile.var = testing_data.var
+generation_profile.obs['beta'] = TCRs
+generation_profile.var['gene'] = np.array(pd.read_csv("./Requirements/CMG_genes_5000.csv")['genes'])
 generation_profile.write(f"{config['Train']['output_dir']}/Generation_result.h5ad")
