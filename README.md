@@ -124,6 +124,6 @@ Command：
 
 This command line will output a "Generation_result.h5ad" in the directory "./Experiments/TrainingResult_CrossModalityGeneration". This file contains the predicted T cell transcriptome.
 ## Citation
-
+Yicheng Gao, Kejing Dong, Qi Liu et al. *Unified cross-modality integration and analysis of T-cell receptors and T-cell transcriptomes*, biorxiv, 2023.
 ## Contacts
 bm2-lab@tongji.edu.cn
