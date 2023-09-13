@@ -1,6 +1,6 @@
 # UniTCR
 ## Introduction 
-UniTCR is a unified framework for integration and joint analysis of T cell receptor (TCR) and its corresponding transcriptome, which is composed of a dual-modality contrastive learning module and a modality preservation module. This model can be easily adapted to four applications in the computational immunology, including:
+UniTCR is a novel low-resource-aware multi-modal representation learning framework for unifiably integration and joint analysis of T cell receptor (TCR) and its corresponding transcriptome, which is composed of a dual-modality contrastive learning module and a modality preservation module. This model can be easily adapted to four applications in the computational immunology, including:
 * Single modality analysis
 * Modality gap analysis
 * Epitope-TCR binding prediction
