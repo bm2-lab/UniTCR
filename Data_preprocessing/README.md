@@ -1,5 +1,7 @@
 # An example of data prepropossing for UniTCR
 
+## Requirements
+R == 3.6.1
 ###  1.  Load the required packages
 ```{r}
 library(Seurat)
