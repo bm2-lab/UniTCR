@@ -1,15 +1,15 @@
 # An example of data prepropossing for UniTCR
 
 ## Requirements
-R == 3.6.1
-Seurat == 3.2.2
-hdf5r == 1.3.3
-loomR == 0.2.1.9000
-We also run this code on R 4.1.0 with Seurat == 4.3.0.
+R == 3.6.1  
+Seurat == 3.2.2  
+hdf5r == 1.3.3  
+loomR == 0.2.1.9000  
+We also run this code on R 4.1.0 with Seurat == 4.3.0.  
 
-Python == 3.7.16
-scanpy == 1.9.3
-loompy == 3.0.7
+Python == 3.7.16  
+scanpy == 1.9.3  
+loompy == 3.0.7  
 
 ###  1.  Load the required packages
 ```{r}
