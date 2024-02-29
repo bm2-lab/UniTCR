@@ -16,7 +16,6 @@ loompy == 3.0.7
 library(Seurat)
 library(hdf5r)
 library(loomR)
-library(SeuratDisk)
 ```
 ### 2.  Read single-cell expression data to construct the Seurat object and perform initially filtering. The data utilized here is stored in the h5 format, hence the Read10X_h5 function is employed for reading. If your data is stored in other formats or has been encapsulated as Seurat objects, you can use the corresponding method to load it. In this scenario, two samples are sequentially read in.
 ```{r}
