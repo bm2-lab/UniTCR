@@ -5,7 +5,7 @@ R == 3.6.1
 Seurat == 3.2.2  
 hdf5r == 1.3.3  
 loomR == 0.2.1.9000
-#### (We can also run this code on R 4.1.0 with Seurat == 4.3.0)  
+#### (We can also run this code on R 4.1.0 using Seurat == 4.3.0 and SeuratDisk == 0.0.0.9021)  
 
 Python == 3.7.16  
 scanpy == 1.9.3  
