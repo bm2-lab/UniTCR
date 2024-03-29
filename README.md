@@ -1,4 +1,5 @@
 # UniTCR
+[![DOI image](https://zenodo.org/badge/DOI/10.5281/zenodo.10891094.svg)](https://zenodo.org/record/10891094#.Y8a7dXZBxHU)
 ## Introduction 
 UniTCR is a novel low-resource-aware multi-modal representation learning framework for unifiably integration and joint analysis of T cell receptor (TCR) and its corresponding transcriptome, which is composed of a dual-modality contrastive learning module and a modality preservation module. This model can be easily adapted to four applications in the computational immunology, including:
 * Single modality analysis
